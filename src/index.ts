@@ -10,8 +10,6 @@ import { getVideoParams, ffmpegScreenshot } from "./utils/ffmpeg.js";
 import logger from './utils/logger.js';
 import { Youtube } from './utils/youtube.js';
 import { TwitchStream } from './@types/index.js';
-require('global-agent/bootstrap');
-process.env.GLOBAL_AGENT_HTTP_PROXY = 'http://127.0.0.1:6969';
 
 // Create a new instance of Streamer
 const streamer = new Streamer(new Client());
